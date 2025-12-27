@@ -1,0 +1,25 @@
+baseURL: "https://gatamar.github.io/"
+languageCode: "en-us"
+title: "gatamar blog"
+
+enableGitInfo: true
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20
+
+frontmatter:
+  lastmod: ["lastmod", ":git", "date", "publishDate"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "post_path": "site/content/posts/on-asking-questions/index.md",
+  "issues": [
+    {
+      "line": 29,
+      "error_type": "article",
+      "error_subtype": "missing",
+      "note": "feel like impostor is missing an article (an)."
+    },
+    {
+      "line": 30,
+      "error_type": "determiner",
+      "error_subtype": "wrong_choice",
+      "note": "go-to person for the tasks like this one uses a clunky determiner; idiomatically 'for tasks like this one'."
+    },
+    {
+      "line": 45,
+      "error_type": "word_choice",
+      "error_subtype": "awkward",
+      "note": "the no-brainers is awkward as a noun here; 'no-brainer prompts' or just 'no-brainers'."
+    }
+  ]
+}

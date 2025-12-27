@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "post_path": "site/content/posts/on-asking-questions/index.md",
+  "issues": [
+    {
+      "line": 29,
+      "error_type": "preposition",
+      "error_subtype": "wrong_choice",
+      "note": "feel as an impostor uses the wrong preposition; idiomatically it's 'feel like'."
+    },
+    {
+      "line": 45,
+      "error_type": "verb",
+      "error_subtype": "mood",
+      "note": "If I was persistent enough is a hypothetical; formal subjunctive uses 'were'."
+    }
+  ]
+}

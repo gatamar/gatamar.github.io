@@ -1,0 +1,9 @@
+# Hugo build output (since Hugo lives in /site)
+site/public/
+site/resources/
+site/.hugo_build.lock
+site/hugo_stats.json
+
+# OS/editor
+.DS_Store
+.vscode/

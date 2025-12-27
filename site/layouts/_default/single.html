@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    {{ $date := .Lastmod }}
+    {{ if $date.IsZero }}
+      {{ $date = .Date }}
+    {{ end }}
+    {{ if not $date.IsZero }}
+      <p>
+        Published: {{ $date.Format "2006-01-02" }}
+        {{ with .Params.tags }}
+          · Tags:
+          {{ range $i, $t := . }}
+            {{ if $i }}, {{ end }}
+            <a href="{{ "/tags/" | relURL }}{{ $t | urlize }}/">{{ $t }}</a>
+          {{ end }}
+        {{ end }}
+      </p>
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+{{ end }}

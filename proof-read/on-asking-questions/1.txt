@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "post_path": "site/content/posts/on-asking-questions/index.md",
+  "issues": [
+    {
+      "line": 8,
+      "error_type": "punctuation",
+      "error_subtype": "comma_splice",
+      "note": "Comma splice between two independent clauses."
+    },
+    {
+      "line": 8,
+      "error_type": "phrasing",
+      "error_subtype": "awkward",
+      "note": "memes that ChatGPT is... missing 'about/that say'."
+    },
+    {
+      "line": 14,
+      "error_type": "article",
+      "error_subtype": "missing",
+      "note": "to LLM missing 'an'."
+    },
+    {
+      "line": 16,
+      "error_type": "article",
+      "error_subtype": "unnecessary",
+      "note": "the ChatGPT uses an unnecessary article."
+    },
+    {
+      "line": 21,
+      "error_type": "hyphenation",
+      "error_subtype": "compound_modifier",
+      "note": "problem solving missing a hyphen as a compound modifier."
+    },
+    {
+      "line": 21,
+      "error_type": "article",
+      "error_subtype": "missing",
+      "note": "in Slack support channel missing an article."
+    },
+    {
+      "line": 21,
+      "error_type": "word_order",
+      "error_subtype": "inversion",
+      "note": "what could they ask has incorrect word order."
+    },
+    {
+      "line": 21,
+      "error_type": "possessive",
+      "error_subtype": "wrong_word",
+      "note": "Do you homework uses the wrong possessive."
+    },
+    {
+      "line": 25,
+      "error_type": "redundancy",
+      "error_subtype": "intensifier",
+      "note": "most favorite is redundant."
+    },
+    {
+      "line": 25,
+      "error_type": "tense",
+      "error_subtype": "mismatch",
+      "note": "you'd never found has a tense mismatch."
+    },
+    {
+      "line": 26,
+      "error_type": "comparative",
+      "error_subtype": "incorrect_form",
+      "note": "how easier is ungrammatical."
+    },
+    {
+      "line": 38,
+      "error_type": "preposition",
+      "error_subtype": "wrong_choice",
+      "note": "contributed into uses the wrong preposition."
+    },
+    {
+      "line": 40,
+      "error_type": "verb",
+      "error_subtype": "missing",
+      "note": "A fun fact though that... is missing a verb."
+    },
+    {
+      "line": 40,
+      "error_type": "number",
+      "error_subtype": "article_plural_mismatch",
+      "note": "a no-brainers has incorrect article/plural."
+    },
+    {
+      "line": 40,
+      "error_type": "article",
+      "error_subtype": "wrong_choice",
+      "note": "a right way uses the wrong article."
+    }
+  ]
+}
