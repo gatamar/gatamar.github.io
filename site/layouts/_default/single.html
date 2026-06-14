@@ -16,8 +16,28 @@
             <a href="{{ "/tags/" | relURL }}{{ $t | urlize }}/">{{ $t }}</a>
           {{ end }}
         {{ end }}
+        <span id="gc-views" title="Page views"></span>
       </p>
     {{ end }}
+
+    <script>
+      (function () {
+        var r = new XMLHttpRequest();
+        r.addEventListener("load", function () {
+          // GoatCounter returns the JSON body even with a 404 (e.g. a path
+          // with no views yet, where count is "0"), so parse it regardless.
+          try {
+            var n = JSON.parse(this.responseText).count;
+            document.querySelector("#gc-views").innerText = " · " + n + " views";
+          } catch (e) {
+            if (location.hostname === "localhost") console.warn("view counter:", e);
+          }
+        });
+        r.open("GET", "https://gatamar.goatcounter.com/counter/" +
+          encodeURIComponent(location.pathname) + ".json");
+        r.send();
+      })();
+    </script>
 
     {{ .Content }}
   </article>
