@@ -12,6 +12,9 @@ menu:
     - name: Posts
       pageRef: /posts
       weight: 10
+    - name: Tags
+      pageRef: /tags
+      weight: 15
     - name: About
       pageRef: /about
       weight: 20

@@ -2,7 +2,7 @@
 date = '2026-09-19'
 draft = false
 title = 'The Long Walk'
-tags = ["books", "travel"]
+tags = ["fiction-books", "travel"]
 +++
 
 I recently finished a few books by Stephen King, one of them being "The Long Walk". While I didn't know about this book before reading it, the plot resonates with my idea of a good trip 😈
