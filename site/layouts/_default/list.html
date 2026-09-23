@@ -1,15 +1,17 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  {{ if not .Data.Terms }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
 
   {{ with .Data.Terms }}
-    <ul>
+    <div class="tag-cloud">
       {{ range .ByCount }}
-        <li>
-          <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-          ({{ .Count }})
-        </li>
+        <a href="{{ .Page.RelPermalink }}">
+          {{ .Page.Title }}
+          <small>{{ .Count }}</small>
+        </a>
       {{ end }}
-    </ul>
+    </div>
   {{ else }}
     {{ $pages := .Pages.ByLastmod.Reverse }}
     <ul>

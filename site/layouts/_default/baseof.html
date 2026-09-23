@@ -14,7 +14,7 @@
       {{ with .Site.Menus.main }}
         <nav>
           {{ range . }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
           {{ end }}
         </nav>
       {{ end }}

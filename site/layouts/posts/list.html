@@ -1,6 +1,4 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
   {{ $pages := .Pages.ByLastmod.Reverse }}
   <ul>
     {{ range $pages }}

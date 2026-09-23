@@ -1,6 +1,14 @@
 {{ define "main" }}
+  {{ $isMainMenuPage := false }}
+  {{ range .Site.Menus.main }}
+    {{ if $.IsMenuCurrent "main" . }}
+      {{ $isMainMenuPage = true }}
+    {{ end }}
+  {{ end }}
   <article>
-    <h1>{{ .Title }}</h1>
+    {{ if not $isMainMenuPage }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
 
     {{ $date := .Lastmod }}
     {{ if $date.IsZero }}

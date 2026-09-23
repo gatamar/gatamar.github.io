@@ -1,6 +1,4 @@
 {{ define "main" }}
-  <h1>{{ .Site.Title }}</h1>
-
   <h2>Recently updated</h2>
   <ul>
     {{ range first 10 (where .Site.RegularPages "Section" "posts").ByLastmod.Reverse }}

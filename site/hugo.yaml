@@ -1,6 +1,7 @@
 baseURL: "https://gatamar.github.io/"
 languageCode: "en-us"
 title: "gatamar blog"
+capitalizeListTitles: false
 
 enableGitInfo: true
 
