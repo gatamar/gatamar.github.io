@@ -21,9 +21,9 @@ body {
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
   padding: 2.5rem 1.75rem 1.25rem;
   border-bottom: 1px solid var(--rule);
   background:
@@ -54,12 +54,15 @@ header strong a {
 }
 
 nav {
-  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 nav a {
   display: inline-block;
-  margin-left: 0.4rem;
+  margin: 0;
   padding: 0.3rem 0.55rem;
   color: var(--muted);
   text-decoration: none;
